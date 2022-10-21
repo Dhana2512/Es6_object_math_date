@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        const marks = {
+            tamil : 56,
+            english : 45,
+            maths : 89,
+            science : 43,
+            'social science' : 56, 
+        }
+
+       
+        // entries
+        console.log(Object.entries(marks));
+
+        // fromEntries
+        const arr = [['a',1],['b',2],['c',3]];
+        console.log(Object.fromEntries(arr));
+
+        // hasOwnProperty
+        console.log(marks.hasOwnProperty('tamil'));
+
+        // hasOwn
+        console.log(marks.hasOwnProperty('math'));
+
+        // freeze
+        console.log(Object.freeze(marks));
+        marks.tamil = 34 ;
+        console.log(marks);
+
+        // isFrozen
+        console.log(Object.isFrozen(marks));
+
+        // keys
+        console.log(Object.keys(marks));
+
+        //values
+        console.log(Object.values(marks));
+
+        // seal
+
+        const marks1 = {
+            tamil : 53,
+            english : 45,
+            maths : 86,
+        }
+        console.log(Object.seal(marks1));
+        marks1.tamil = 22;
+        console.log(marks1);
+        marks1.science = 23;
+        console.log(marks1);
+
+        // isSealed
+        console.log(Object.isSealed(marks1));
+
+        
+
+    </script>
+    
+</body>
+</html>

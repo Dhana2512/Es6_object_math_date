@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>date</title>
+</head>
+<body>
+    <script>
+        const a = new Date();
+        console.log(a.getDate());
+        console.log(a.getDay());
+        console.log(a.getFullYear());
+        console.log(a.getHours());
+        console.log(a.getMilliseconds());
+        console.log(a.getMonth());
+        console.log(a.getMinutes());
+        console.log(a.getSeconds());
+        console.log(a.getTime());
+        console.log(Date.now(),'now');
+        const b = new Date(2023-12-25);
+        console.log(b);
+        console.log(b.setDate(20),'setdate');
+        console.log(a.setMinutes(30));
+        console.log(a.setHours(13));
+        console.log(a.setSeconds(4));
+        console.log(a.setMilliseconds(123455));
+        console.log(a.setFullYear(2025)); 
+       
+    </script>
+</body>
+</html>
